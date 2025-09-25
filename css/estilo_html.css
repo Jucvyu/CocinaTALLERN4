@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: cursive;
+    /* Fuente principal */
+    font-weight: 300;
+    max-width: 900px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centrado horizontal */
+    background-color: #fdf6f0;
+    /* Color de fondo */
+    color: #2b2b2b;
+}
+
+/* Estilos para títulos h2 */
+h2 {
+    color: #8b5cf6;
+    /* Color inicial */
+}
+
+/* Efecto hover en h2 */
+h2:hover {
+    color: #ec4899;
+    /* Color al pasar el mouse */
+    cursor: pointer;
+}
+
+/* Barra de navegación */
+nav {
+    width: 100%;
+    height: 160px;
+    background-color: #3c3c3c;
+    /* Color de fondo */
+    border-bottom: 2px solid thin #8b5cf6;
+}
+
+h4 {
+    color: #ff95e1;
+    text-align: center;
+}
+
+h4:hover {
+    color: #ec4899;
+}
+
+/* Imágen del nav // logo */
+nav img {
+    border-radius: 10em;
+}
+
+/* Hacer zoom en el logo */
+nav img:hover {
+    transform: scale(1.1);
+}
+
+/* Elementos de la lista en la navegación */
+nav ul li {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    /* Sin viñetas */
+    display: inline-block;
+    /* En línea */
+    transition: 0.8s all;
+    /* Transición suave */
+    padding: 18px 20px;
+}
+
+/* Hover en los elementos de la lista de navegación */
+nav ul li:hover {
+    text-decoration: underline color(srgb 255 0 255);
+    background-color: #f3e8ff;
+    transition: all 0.5s;
+    border-radius: 2em;
+    color: #2b2b2b;
+}
+
+/* Enlaces dentro de la navegación */
+nav ul li a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+/* Enlace visitado */
+a:visited {
+    color: #140b0b;
+}
+
+/* Enlace activo */
+a:active {
+    color: #ea39c7;
+}
+
+/* Logo de la imagen */
+.img-logo {
+    width: 200em, ;
+    height: 80%;
+    padding-top: 30px;
+    padding-left: 5%;
+}
+
+/* Lista de navegación alineada a la derecha */
+nav ul {
+    padding-top: 20px;
+    float: right;
+}
+
+/* Banner principal */
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+/* Sección destacada */
+.featured {
+    background-color: rgba (240, 193, 107, 0.616);
+}
+
+/* Video principal */
+.fp-video {
+    width: 55%;
+    padding: 2em;
+    overflow-y: visible;
+}
+
+/* Artículo destacado */
+.ft-articulo {
+    background-color: #fee0ef;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    vertical-align: top;
+    justify-content: center;
+}
+
+.ft-articulo2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    vertical-align: top;
+    justify-content: center;
+}
+
+/* Estilo para la tabla de misiones y objetivos */
+.ft-articulo2 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.ft-articulo2 table,
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.ft-articulo2 h2 {
+    text-align: center;
+    color: unset;
+    color: #ec4899
+}
+
+.ft-articulo2 p {
+    float: left;
+    width: 100%;
+}
+
+/* Estilos para los artículos */
+article {
+    padding: 30px;
+    background-color: #f3e8ff;
+    margin: 20px 0;
+    border-radius: 20px;
+    border: thin solid #000000;
+}
+
+/* Título del artículo */
+article h1 {
+    border-bottom: solid thin rgb(0, 0, 0);
+    word-spacing: 5px;
+    color: #8b5cf6
+}
+
+/* Hover en el título del artículo */
+article h1:hover {
+    color: #ec4899;
+    cursor: pointer;
+    border-bottom: solid thin #8b5cf6;
+
+}
+
+/* Video y artículo destacados en bloque */
+.fp-video,
+.ft-articulo {
+    display: inline-block;
+    border-radius: 30px;
+}
+
+/* Título dentro del artículo destacado */
+.ft-articulo h1 {
+    font-size: 30px;
+}
+
+.ft-articulo2 {
+    display: inline-block;
+    border-radius: 30px;
+}
+
+/* Título dentro del artículo destacado */
+.ft-articulo2 h1 {
+    font-size: 30px;
+}
+
+/* Contenedor de botones */
+.boton-container {
+    text-align: center;
+    background-color: #8b5cf6;
+    margin: 0 auto;
+    font-size: 15px;
+    word-spacing: 5px;
+    width: 70%;
+    border-radius: 10px;
+    border: thin solid black;
+}
+
+/* Enlaces dentro del contenedor de botones */
+.boton-container a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+}
+
+/* Botón */
+.boton {
+    padding: 15px;
+}
+
+/* Hover en el contenedor de botones */
+.boton-container :hover {
+    background-color: #ec4899;
+    color: #000;
+    font-weight: bolder;
+}
+
+/* Imágenes de artículos */
+.art-image img {
+    width: 300px;
+    height: 230px;
+    margin: 20px 33px;
+    border-radius: 3em;
+    transition: transform 0.5s ease;
+    /* Define la transición para la propiedad transform */
+    transform-origin: center;
+    /* Asegura que el zoom se haga desde el centro del elemento */
+}
+
+.art-image img:hover {
+    transform: scale(1.15);
+}
+
+.art-image2 img {
+    width: 325px;
+    height: 190px;
+    margin: 20px;
+    border-radius: 3em;
+}
+
+.art-image3 img {
+    width: 700px;
+    height: 350px;
+    margin: 15px;
+    align-items: center;
+    border-radius: 3em;
+}
+
+/* Contenedor de artículo */
+.art-cont {
+    width: 740px;
+    vertical-align: top;
+}
+
+/* Párrafos dentro del contenedor de artículo */
+.art-cont p {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Título dentro del contenedor de artículo */
+.art-cont h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: right;
+    color: #ec4899;
+    border-bottom: thin solid #8b5cf6;
+}
+
+/* Subtítulo dentro del contenedor de artículo */
+.art-cont h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+/* Párrafos generales */
+p {
+    font-size: 19px;
+    line-height: 1.6;
+    font-family: cursive;
+    color: #2b2b2b;
+}
+
+/* Títulos h2 generales */
+h2 {
+    font-size: 35px;
+    margin: 0;
+    border-bottom: solid thin black;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+.a2 a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.a2 a:hover {
+    color: #ff4bed;
+    text-decoration: underline;
+}
+
+.a3 a {
+    color: #ff7be0;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.a3 a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Enlaces en el pie de página */
+.link a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #c6edff;
+}
+
+/* Carrusel de imágenes o videos */
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(240, 107, 233, 0.582);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+/* Contenedor de diapositivas */
+.slides {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+/* Imágenes y videos dentro de las diapositivas */
+.slides img,
+.slides iframe {
+    width: 100%;
+    flex-shrink: 0;
+    border: none;
+}
+
+/* Flechas del carrusel */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(235, 78, 204, 0.95);
+    color: #000;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+    z-index: 10;
+}
+
+/* Hover en las flechas del carrusel */
+.arrow:hover {
+    background: rgba(240, 193, 107, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Flecha activa */
+.arrow:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+/* Flecha anterior */
+.prev {
+    left: 15px;
+}
+
+/* Flecha siguiente */
+.next {
+    right: 15px;
+}
+
+/* Hover en flechas */
+.arrow:hover {
+    background: rgb(255, 131, 236);
+}
+
+/* Posición de la flecha anterior */
+.prev {
+    left: 10px;
+}
+
+/* Posición de la flecha siguiente */
+.next {
+    right: 40px;
+}
+
+/* Botones generales */
+button {
+    background-color: rgba(149, 0, 255, 0.883);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+/* Hover en botones */
+button:hover {
+    background-color: #ff6af0;
+    color: #000;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    background-color: #e8d3fe;
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);
+    border: thin solid #8a5cf672;
+    border-radius: 20px;
+    padding: 1% 0px;
+    margin: 1% 0px;
+}
